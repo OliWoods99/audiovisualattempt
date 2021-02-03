@@ -24,14 +24,15 @@ void draw()
   background(0);
   stroke(255);
   
-  //change z to change amount of circles drawn, looks cool with a high z but lags massively
+  //change z to change amount of circles drawn, looks cool with a high z but lags massively -> TO DO: multithreading
   float z = 0.3;
   
   for(float i = 0; i < 1; i = i + z){
     drawCircleFFT(i);
   }
   
-  saveFrame("output/####.png");
+  //save pics of frames
+  //saveFrame("output/####.png");
   
 }
 void drawCircleFFT(float t){
